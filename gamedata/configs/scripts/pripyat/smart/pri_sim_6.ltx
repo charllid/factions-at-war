@@ -1,0 +1,27 @@
+[smart_terrain]
+squad_id = 29
+max_population = 3
+respawn_only_smart = true
+respawn_params = respawn@pri_sim_6
+respawn_idle = 86400
+
+
+
+[respawn@pri_sim_6]
+merc_sim_squad
+spawn_merc
+spawn_zombied
+
+
+
+[spawn_zombied]
+spawn_squads = zombied_sim_squad_novice, zombied_sim_squad_advanced, zombied_sim_squad_veteran
+spawn_num = 1
+
+[merc_sim_squad]
+spawn_squads = merc_sim_squad_novice, merc_sim_squad_advanced, merc_sim_squad_veteran, killer_sim_squad_alpha, killer_sim_squad_special
+spawn_num = 1
+
+[spawn_merc]
+spawn_squads = merc_sim_squad_novice, merc_sim_squad_advanced, merc_sim_squad_veteran, killer_sim_squad_alpha, killer_sim_squad_special
+spawn_num = 1

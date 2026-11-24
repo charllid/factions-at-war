@@ -1,0 +1,30 @@
+[smart_terrain]
+squad_id = 5
+max_population = 1 ;2
+;arrive_dist = 300
+respawn_params = respawn@bar_zastava_2
+respawn_idle = 30000
+
+
+[respawn@bar_zastava_2]
+spawn_duty@advanced
+spawn_duty@veteran
+
+[spawn_duty@advanced]
+spawn_squads = duty_sim_squad_novice, duty_sim_squad_advanced, duty_sim_squad_veteran, dolg_sim_squad_alpha
+spawn_num = 1
+
+[spawn_duty@veteran]
+spawn_squads = duty_sim_squad_novice, duty_sim_squad_advanced, duty_sim_squad_veteran, dolg_sim_squad_alpha
+spawn_num = 1
+
+[exclusive]
+duty2_guard1 = bar\bar_zastava_2_smart.ltx
+duty2_guard2 = bar\bar_zastava_2_smart.ltx
+duty2_guard3 = bar\bar_zastava_2_smart.ltx
+duty2_guard4 = bar\bar_zastava_2_smart.ltx
+duty2_guard5 = bar\bar_zastava_2_smart.ltx
+bar_zastava_2_minigunner_excl = bar\bar_zastava_2_smart.ltx
+faction_base_defense_enemy1 = bar\bar_zastava_2_smart.ltx
+faction_base_defense_enemy2 = bar\bar_zastava_2_smart.ltx
+faction_base_defense_enemy3 = bar\bar_zastava_2_smart.ltx
